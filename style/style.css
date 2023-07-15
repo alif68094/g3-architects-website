@@ -186,7 +186,31 @@ nav ul li a {
     font-weight: 600;
 }
 
+.sponsor {
+    text-align: center;
+    margin-top: 3rem;
+}
 
+.sponsor-img-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.sponsor-heading {
+    color: var(--dark-01, #131313);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sponsor-des {
+    color: var(--dark-03, #727272);
+    text-align: center;
+    margin-top: 0.4rem;
+    font-size: 0.8;
+    font-weight: 400;
+}
 
 
 /* teams section responsive style */
@@ -238,6 +262,10 @@ nav ul li a {
         flex-direction: column;
         padding: 10px;
     }
+    .sponsor-img-container {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
 }
 
 /* tab */
@@ -245,5 +273,11 @@ nav ul li a {
     .nav-bar {
         flex-direction: column;
         padding: 30px;
+    }
+    .sponsor-img-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column; */
+        gap: 0.6rem;
     }
 }
